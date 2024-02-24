@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Website</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="port.css">
+</head>
+<body>
+  <header>
+    <div>
+      <h1>Portfolio</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Skills</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact Me</a></li>
+      </ul>
+    </nav>
+    <div class="btn-container">
+      <button class="mode-btn" onclick="toggleMode()">Light Mode</button>
+    </div>
+  </header><br>
+  <div class="container">
+    <div class="introduction">
+      <h2><br><br>Hi, I'm Tharak</h2>
+      <p>As a frontend developer, I'm the creative architect behind the<br> visual magic of websites and web applications.<br> My canvas is the browser, and I paint with HTML, CSS, and JavaScript to craft <br> immersive user experiences. Collaborating closely with designers, I bring their <br>visions to life, ensuring every pixel is perfect and every interaction seamless. <br>I'm passionate about responsive design</p>
+    </div>
+    <div class="right-side">
+      <img src="logo2.png" alt="Image">
+    </div>
+  </div><br>
+  <div class="About">
+    <h2 style="text-align: center;">Skills</h2><br><br>
+    <div class="threeb">
+      <div class="box1"><img src="html5.jpg" width="200px"></div>
+      <div class="box1"><img src="css.jpg" width="200px"></div>
+      <div class="box1"><img src="js.jpg" width="200px"></div>
+    </div>
+  </div><br>
+
+  <div class="Contact">
+    <h2 style="text-align: center;">Contact</h2>
+    <p><u>Social</u></p>
+
+    <div class="social-icons">
+      <a href="#" target="_blank"><img src="f11.jpg" class="fb"> <span>Facebook</span></a>
+      <a href="#" target="_blank"><img src="i11.jpg" class="it"> <span>Instagram</span></a>
+      <a href="#" target="_blank"><img src="l11.jpg" class="ln"> <span>Linkedin</span></a>
+      <a href="#" target="_blank"><img src="g11.jpg" class="git"> <span>Github</span></a>
+    </div>
+    <p>Feedback</p>
+    <form class="email-form" action="#" method="post">
+      <input type="email" name="email" placeholder="Enter your email">
+      <input type="submit" value="Write">
+    </form>
+  </div>
+
+  <script>
+    // JavaScript function to trigger animation
+    function toggleMode() {
+      var body = document.body;
+      if (body.classList.contains("dark-mode")) {
+        // Switch to light mode
+        body.classList.remove("dark-mode");
+        body.style.backgroundColor = "#fcfcfc";
+        body.style.color = "#000000";
+        document.querySelector(".mode-btn").textContent = "Light Mode";
+      } else {
+        // Switch to dark mode
+        body.classList.add("dark-mode");
+        body.style.backgroundColor = "#000000";
+        body.style.color = "#ffffff";
+        document.querySelector(".mode-btn").textContent = "Dark Mode";
+      }
+    }
+  </script>
+</body>
+</html>
